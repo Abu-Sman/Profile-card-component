@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg), linear-gradient(hsl(185, 75%, 39%), hsl(185, 75%, 39%));
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 125% 200%, -25% -100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 90em) {
+  .container {
+    background-position: -75% 175%, 175% -100%;
+  }
+}
+@media screen and (min-width: 150em) {
+  .container {
+    height: 80vh;
+    width: 60vw;
+    margin: 10rem auto;
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+.profilecard {
+  text-align: center;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.profilecard--box1 {
+  position: relative;
+  height: 15rem;
+  background-image: url(../images/bg-pattern-card.svg);
+}
+.profilecard--img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+  border: 5px solid hsl(0, 0%, 100%);
+}
+.profilecard--box2 {
+  background-color: hsl(0, 0%, 100%);
+  padding-top: 7rem;
+}
+.profilecard--box2 .name-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.profilecard--box2 .name-box .name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+.profilecard--box2 .name-box .number {
+  font-size: 1.8rem;
+}
+.profilecard--box2 .city {
+  margin-bottom: 2.5rem;
+}
+.profilecard--box2 .stats-box {
+  padding: 2.4rem 4rem;
+  border-top: 1px solid rgba(106, 111, 129, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  color: hsl(0, 0%, 59%);
+}
+.profilecard--box2 .stats-box .stat {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 0.3rem;
+}
+.profilecard--box2 .stats-box span {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
